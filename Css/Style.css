@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Uchen&family=Zen+Loop&display=swap');
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Barre de navigation */
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: coral;
+    position: sticky;
+    top: 0;
+}
+nav h1{
+    color: cornsilk;
+
+}
+
+nav div.onglets{
+    display: flex;
+    flex-wrap: wrap;
+}
+nav div.onglets ul li {
+    font-size: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    color: cornsilk;
+    position: relative;
+    display: inline-block;
+   
+    
+}
+nav div.onglets ul li a {
+   padding:  10px 15px;
+    text-decoration: none;
+    color: cornsilk;
+}
+nav div.onglets ul li , form{
+    display: inline-block;
+   
+    
+
+}
+nav div.onglets input{
+    margin: 8px 20px;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: cornsilk;
+
+}
+
+.sub{
+    display: none;
+}
+nav li:hover .sub{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    padding: 0px;
+    z-index: 1000;
+}
+.sub li{
+    border-bottom: 1px solid #ccc;
+}
+.sub li a{
+    padding: 15px 30px;
+    font-size: 15px;
+    color: ghostwhite;
+    width: 270px;
+}
+/* header */
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header h1{
+    font-size: 50px;
+    max-width: 500px;
+    text-align: center;
+}
+header button{
+    padding: 15px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+header button a{
+    text-decoration: none;
+    color: black;
+}
+/* section  */
+.main{
+    margin: 20px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* les cartes */
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cards .card{
+    margin-right: 20px;
+    cursor: pointer;
+}
+.cards .card img{
+    width: 350px;
+}
+.cards .card .card-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* fin cartes */
+/* video */
+.main .video{
+    margin-top: 80px;
+    width: 90%;
+}
+.main .video iframe{
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 400px;
+}
+/* fin section */
+/* slider */
+
+/* footer */
+footer{
+    margin-top: 100px;
+    background-color: coral;
+    color: lightyellow;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+}
+footer .social{
+    display: flex;
+}
+footer .social li.btm{
+    margin-right: 15px;
+    
+    border-radius: 100%;
+    padding: 5px;
+    text-align: center;
+    
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer .social .btm a{
+    text-decoration: none;
+    color: ghostwhite;
+
+}
+footer .social .btn .btm{
+    display: inline-block;
+}
+footer .social .btn .btm a , i {
+    padding-left: 3px;
+}

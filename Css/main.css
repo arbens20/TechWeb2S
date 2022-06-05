@@ -1,0 +1,319 @@
+/* header */
+/* header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 25px;
+  background-image: url(../Img/depositphotos_23069048-stock-photo-group-of-african-medical-doctors.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 500px;
+}
+header h1 {
+  font-size: 50px;
+  max-width: 500px;
+  text-align: center;
+  color:#16f094;
+}
+header button {
+  padding: 15px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+header button a {
+  text-decoration: none;
+  color:#16f094;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2 {
+  color: #444;
+}
+
+p a {
+  color: green;
+}
+
+.btn {
+  background: green;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.btn:hover {
+  color: green;
+  background: white;
+  padding: 3px 8px;
+  border: 2px solid green;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 10px;
+  border-bottom: 2px solid #999;
+}
+
+table {
+  padding: 10px;
+}
+
+tr,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+.side-menu .brand-name {
+  height: 10vh;
+  display: flex;
+  margin-left: 90px;
+  text-decoration: aquamarine;
+  text-decoration: underline;
+}
+
+.container {
+  position: absolute;
+  right: 0;
+  width: 80vw;
+  height: 100vh;
+  background: #f1f1f1;
+  top: 0;
+}
+
+.container .header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80vw;
+  height: 10vh;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container .header .nav {
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.container .header .nav .search {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+}
+
+/* .container .header .nav .search button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.container .header .nav .search input[type="text"] {
+  border: none;
+  background: #f1f1f1;
+  padding: 10px;
+  width: 50%;
+}
+
+.container .header .nav .user {
+  flex: 1;
+}
+
+.container .content {
+  position: relative;
+  margin-top: 10vh;
+  min-height: 90vh;
+}
+
+.container .content .cards {
+  padding: 20px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container .content .cards .card {
+  width: 250px;
+  height: 150px;
+  background: white;
+  margin: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container .content .content-2 {
+  min-height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.container .content .content-2 .nouveau-medecins {
+  min-height: 50vh;
+  flex: 5;
+  background: white;
+  margin: 0 25px 25px 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+}
+
+.container .content .content-2 .recent-add {
+  flex: 2;
+  background: white;
+  min-height: 50vh;
+  margin: 0 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1050px) {
+  .side-menu li {
+    font-size: 18;
+  }
+}
+
+/* Menu et Sous Menu */
+
+.dropmenu {
+  background-color: green;
+  width: 140px;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 25px;
+  margin-left: 10px;
+}
+
+.sub {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.sub {
+  display: none;
+}
+
+.dropmenu li {
+  position: relative;
+  height: 65px;
+}
+
+.dropmenu a {
+  display: block;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  padding: 3px 10px;
+  text-align: center;
+}
+
+.dropmenu li:hover ul {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 140px;
+  z-index: 100;
+}
+
+.dropmenu {
+  margin-top: 125px;
+  width: 150px;
+}
+
+/* Gestion des couleurs */
+.dropmenu li {
+  background-color: green; /* Couleur fond menu */
+  border-radius: 25px;
+}
+.dropmenu li a {
+  color: white; /* Couleur du texte du menu */
+}
+.dropmenu li:hover {
+  background-color: #666; /* Couleur fnd menu au survol */
+}
+.dropmenu li:hover a {
+  color: #fff; /* Couleur texte  survol */
+}
+
+.dropmenu ul li {
+  background-color: #ccc; /* Couleur d'arriere-plan des sous-menu */
+}
+.dropmenu ul li:hover {
+  background-color: green; /* Couleur d'arriere-plan des sous-menu au survol */
+}
+.dropmenu ul li a {
+  color: #666; /* Couleur du texte des sous-menu */
+}
+.dropmenu ul li:hover a {
+  color: white; /* Couleur du texte des sous-menu au survol */
+}
+
+.pst {
+  display: flex;
+}
+
+.pst button {
+  margin-left: 25px;
+}
+
+.pst input {
+  width: 200px;
+  border-radius: 25px;
+}
+
+button {
+  width: 120px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: green;
+  color: white;
+}
+
+button:hover {
+  background-color: #666;
+  color: white;
+}
+
+h1 a {
+  color: green;
+}

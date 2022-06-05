@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Uchen&family=Zen+Loop&display=swap");
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+
+/* Barre de navigation */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: green;
+  position: sticky;
+  top: 0;
+}
+nav h1 {
+  color: cornsilk;
+}
+
+nav div.onglets {
+  display: flex;
+  flex-wrap: wrap;
+}
+nav div.onglets ul li {
+  font-size: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+  color: cornsilk;
+  position: relative;
+  display: inline-block;
+}
+nav div.onglets ul li a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: cornsilk;
+}
+nav div.onglets ul li,
+form {
+  display: inline-block;
+}
+nav div.onglets input {
+  margin: 8px 20px;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background-color: cornsilk;
+}
+
+.sub {
+  display: none;
+}
+nav li:hover .sub {
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  padding: 0px;
+  z-index: 1000;
+}
+.sub li {
+  border-bottom: 1px solid #ccc;
+}
+.sub li a {
+  padding: 15px 30px;
+  font-size: 15px;
+  color: ghostwhite;
+  width: 270px;
+}
+
+/*  */
+
+.onglets ul li:hover {
+  background-color: grey;
+  color: green;
+  border-radius: 10px;
+}
+
+.onglets ul li {
+  margin-top: 10px;
+}
+
+.sub li {
+  margin-top: 5px;
+  background-color: grey;
+  margin-left: 5px;
+}
+
+a {
+  text-decoration: none;
+}
